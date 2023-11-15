@@ -271,7 +271,7 @@
         }
 
         .section6 {
-            margin-bottom: 100px;
+            margin-bottom: 200px;
         }
 
         .section6 .container-xl .card-body {
@@ -290,6 +290,46 @@
         .section6 .container-xl .card:hover .btn {
             background-color: white !important;
             color: black !important;
+        }
+
+        .section7 {
+            margin-bottom: 170px;
+        }
+
+        .section7 .container-fluid {
+            background-image: url(images/restaurant-1837150.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 800px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .section7 .container-fluid .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        .section7 .container-fluid .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            height: 100vh;
+        }
+
+        .section7 .container-fluid .center h1 {
+            letter-spacing: 20px;
+            font-size: 100px;
+            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 </head>
@@ -577,6 +617,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section7">
+        <div class="container-fluid">
+            <div class="overlay"></div>
+            <div class="center">
+                <h1 class="display-1 text-light">Welcome</h1>
             </div>
         </div>
     </section>
