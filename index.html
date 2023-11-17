@@ -262,7 +262,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            opacity: 0.6;
+            opacity: 0.8;
             background-color: #222222;
         }
 
@@ -328,8 +328,100 @@
 
         .section7 .container-fluid .center h1 {
             letter-spacing: 20px;
-            font-size: 100px;
             font-family: 'Courier New', Courier, monospace;
+        }
+
+        .section8 {
+            margin-bottom: 150px;
+        }
+
+        .section8 .container-fluid .row .menu {
+            display: flex;
+            flex-direction: row;
+            transition: 0.6s ease;
+        }
+
+        .section8 .container-fluid .row .menu .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 20px;
+            margin: 0px 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .section8 .container-fluid .row .menu  {
+                justify-content: space-evenly!important;
+            }
+            .section8 .container-fluid .row .one {
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            
+        }
+
+        .section8 .container-fluid .row .one .menu:hover {
+            background-color: black !important;
+            color: white !important;
+            border-radius: 30px 0px 30px 0px;
+        }
+
+        .section8 .container-fluid .row .two .menu:hover {
+            background-color: black !important;
+            color: white !important;
+            border-radius: 0px 30px 0px 30px;
+        }
+
+        .section8 .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #222222;
+            opacity: 0.4;
+            z-index: 1;
+        }
+
+        .section9 {
+            margin-bottom: 150px;
+        }
+
+        .section10 {
+            overflow: hidden;
+        }
+
+       
+        .section10 .container-fluid .row .one .vr {
+            position: relative;
+            top: -162px;
+            left: 0px;
+            height: 95px;
+            border-right:  1px solid rgb(255, 255, 255);
+        }
+
+        .section10 .container-fluid .row .two .vr {
+            position: relative;
+            top: -162px;
+            left: 0px;
+            height: 95px;
+            border-right:  1px solid rgb(255, 255, 255);
+        }
+
+        .section10 .container-fluid .row .three .vr {
+            position: relative;
+            top: -162px;
+            left: 0px;
+            height: 95px;
+            border-right:  1px solid rgb(255, 255, 255);
+        }
+
+        .section10 .container-fluid .row .four .vr {
+            position: relative;
+            top: -162px;
+            left: 0px;
+            height: 95px;
+            border-right:  1px solid rgb(255, 255, 255);
         }
     </style>
 </head>
@@ -626,6 +718,244 @@
             <div class="overlay"></div>
             <div class="center">
                 <h1 class="display-1 text-light">Welcome</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section8 text-center">
+        <div class="container-fluid">
+            <p style="color: #c5a880; letter-spacing: 2.5px;">RESTO & BAR</p>
+        <h1 class="display-1 mt-2">Restaurant & Bar</h1>
+        <div class="row mt-5 g-md-5">
+            <div class="col-md-12 col-xl-5">
+                <div class="img-container h-100" style="position: relative; z-index: -1;">
+                    <img src="images/resto-bar.jpg.webp" style="width: 100%; height: 100%;">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xl-7">
+                <div class="row">
+                    <div class="col-md-6 one">
+                        <div class="menu bg-light mb-3 p-4">
+                            <img src="images/menu-1.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span style="color: #c5a880;">$20.00</span></div>
+                        </div>
+                        <div class="menu bg-light mb-3 p-4">
+                            <img src="images/menu-2.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$26.00</span></div>
+                        </div>
+                        <div class="menu bg-light mb-3 p-4">
+                            <img src="images/menu-3.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$29.00</span></div>
+                        </div>
+                        <div class="menu bg-light p-4">
+                            <img src="images/menu-4.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$30.00</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 two">
+                        <div class="menu bg-light mb-3 p-4"><img src="images/menu-5.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$19.00</span></div>
+                        </div>
+                        <div class="menu bg-light mb-3 p-4"><img src="images/menu-6.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$23.00</span></div>
+                        </div>
+                        <div class="menu bg-light mb-3 p-4"><img src="images/menu-7.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$33.00</span></div>
+                        </div>
+                        <div class="menu bg-light p-4"><img src="images/menu-8.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
+                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$36.00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <div class="container-fluid text-center">
+            <p class="" style="color: #c5a880; letter-spacing: 2.6px;">TESTIMONIAL</p>
+            <h1 class="display-2">Happy Guests</h1>
+        </div>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active d-flex justify-content-between align-itmes-center">
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 1
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 2
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 3
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item d-flex justify-content-between align-itmes-center">
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 4
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 5
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 6
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item d-flex justify-content-between align-itmes-center">
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 7
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 8
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 500px;">
+                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                    <div class="content d-flex flex-column align-content-center justify-content-center">
+                        <h5>
+                            Hanjala Shihab 9
+                        </h5>
+                        <p style="color: #c5a880;">Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    
+
+    <section class="section10" style="margin-top: 150px;">
+        <div class="container-fluid">
+            <div class="row bg-dark p-5">
+                <div class="col-md-6 col-xl-3 text-center py-5 one">
+                    <h3 style="color: #c5a880;">38,900</h3>
+                    <span class="d-block text-light"># of Happy Guests</span>
+                    <div class="vr"></div>
+                </div>
+                <div class="col-md-6 col-xl-3 text-center py-5 two">
+                    <h3 style="color: #c5a880;">320</h3>
+                    <span class="d-block text-light"># of Rooms</span>
+                    <div class="vr"></div>
+                </div>
+                <div class="col-md-6 col-xl-3 text-center py-5 three">
+                    <h3 style="color: #c5a880;">1000</h3>
+                    <span class="d-block text-light"># of Staffs</span>
+                    <div class="vr"></div>
+                </div>
+                <div class="col-md-6 col-xl-3 text-center py-5 four">
+                    <h3 style="color: #c5a880;">587</h3>
+                    <span class="d-block text-light"># of Destination</span>
+                    <div class="vr"></div>
+                </div>
             </div>
         </div>
     </section>
