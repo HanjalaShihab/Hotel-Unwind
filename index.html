@@ -32,12 +32,12 @@
         }
 
         @media (max-width: 991.98px) {
-        .navbar {
-            background: #222222 !important;
-            position: relative;
-            top: 0;
-            padding: 7px 0;
-            margin: 0;
+            .navbar {
+                background: #222222 !important;
+                position: relative;
+                top: 0;
+                padding: 7px 0;
+                margin: 0;
             }
         }
 
@@ -350,14 +350,15 @@
         }
 
         @media screen and (max-width: 768px) {
-            .section8 .container-fluid .row .menu  {
-                justify-content: space-evenly!important;
+            .section8 .container-fluid .row .menu {
+                justify-content: space-evenly !important;
             }
+
             .section8 .container-fluid .row .one {
                 margin-bottom: 20px;
                 margin-top: 20px;
             }
-            
+
         }
 
         .section8 .container-fluid .row .one .menu:hover {
@@ -388,11 +389,22 @@
         }
 
         .section10 {
-            overflow: hidden;
+            overflow: auto;
         }
 
-       
-        .section10 .container-fluid .row .one .vr {
+        .section10 .container-fluid .row .one::after {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            content: '';
+            width: 1px;
+            height: 40%;
+            background: rgba(255, 255, 255, 0.05);
+            z-index: -1;
+        }
+
+
+        /* .section10 .container-fluid .row .one .vr {
             position: relative;
             top: -162px;
             left: 0px;
@@ -422,7 +434,7 @@
             left: 0px;
             height: 95px;
             border-right:  1px solid rgb(255, 255, 255);
-        }
+        } */
     </style>
 </head>
 
@@ -671,12 +683,15 @@
                 <div class="col-md-4">
                     <div class="card rounded-0">
                         <img src="images/room-1.jpg.webp" style="width: 100%; height: 280px;">
-                        <div class="card-body d-flex flex-column justify-content-center align-content-center text-center pb-5">
+                        <div
+                            class="card-body d-flex flex-column justify-content-center align-content-center text-center pb-5">
                             <h3 class="display-6 mt-3">Suite Room</h3>
-                            <p class="mt-2 text-center px-4" style="color: gray;">Far far away, behind the word mountains,far from the countries Vokalia and Consonantia,there live the n=blind texts.</p>
+                            <p class="mt-2 text-center px-4" style="color: gray;">Far far away, behind the word
+                                mountains,far from the countries Vokalia and Consonantia,there live the n=blind texts.
+                            </p>
                             <div class="buttons d-flex flex-row text-center justify-content-center mt-2">
                                 <p class="mt-2 me-3"><span style="color:#c5a880;"> $450 / NIGHT</span></p>
-                            <a href="#" class="btn btn-dark border rounded-0 p-2">BOOK NOW</a>
+                                <a href="#" class="btn btn-dark border rounded-0 p-2">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -685,12 +700,15 @@
                 <div class="col-md-4">
                     <div class="card rounded-0 d-md-flex flex-md-column-reverse">
                         <img src="images/room-1.jpg.webp" style="width: 100%; height: 280px;">
-                        <div class="card-body d-flex flex-column justify-content-center align-content-center text-center pb-5">
+                        <div
+                            class="card-body d-flex flex-column justify-content-center align-content-center text-center pb-5">
                             <h3 class="display-6 mt-3">Suite Room</h3>
-                            <p class="mt-2 text-center px-4" style="color: gray;">Far far away, behind the word mountains,far from the countries Vokalia and Consonantia,there live the n=blind texts.</p>
+                            <p class="mt-2 text-center px-4" style="color: gray;">Far far away, behind the word
+                                mountains,far from the countries Vokalia and Consonantia,there live the n=blind texts.
+                            </p>
                             <div class="buttons d-flex flex-row text-center justify-content-center mt-2">
                                 <p class="mt-2 me-3"><span style="color:#c5a880;"> $450 / NIGHT</span></p>
-                            <a href="#" class="btn btn-dark border rounded-0 p-2">BOOK NOW</a>
+                                <a href="#" class="btn btn-dark border rounded-0 p-2">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -699,12 +717,15 @@
                 <div class="col-md-4">
                     <div class="card rounded-0">
                         <img src="images/room-1.jpg.webp" style="width: 100%; height: 280px;">
-                        <div class="card-body d-flex flex-column justify-content-center align-content-center text-center pb-5">
+                        <div
+                            class="card-body d-flex flex-column justify-content-center align-content-center text-center pb-5">
                             <h3 class="display-6 mt-3">Suite Room</h3>
-                            <p class="mt-2 text-center px-4" style="color: gray;">Far far away, behind the word mountains,far from the countries Vokalia and Consonantia,there live the n=blind texts.</p>
+                            <p class="mt-2 text-center px-4" style="color: gray;">Far far away, behind the word
+                                mountains,far from the countries Vokalia and Consonantia,there live the n=blind texts.
+                            </p>
                             <div class="buttons d-flex flex-row text-center justify-content-center mt-2">
                                 <p class="mt-2 me-3"><span style="color:#c5a880;"> $450 / NIGHT</span></p>
-                            <a href="#" class="btn btn-dark border rounded-0 p-2">BOOK NOW</a>
+                                <a href="#" class="btn btn-dark border rounded-0 p-2">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -725,213 +746,229 @@
     <section class="section8 text-center">
         <div class="container-fluid">
             <p style="color: #c5a880; letter-spacing: 2.5px;">RESTO & BAR</p>
-        <h1 class="display-1 mt-2">Restaurant & Bar</h1>
-        <div class="row mt-5 g-md-5">
-            <div class="col-md-12 col-xl-5">
-                <div class="img-container h-100" style="position: relative; z-index: -1;">
-                    <img src="images/resto-bar.jpg.webp" style="width: 100%; height: 100%;">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-            <div class="col-md-12 col-xl-7">
-                <div class="row">
-                    <div class="col-md-6 one">
-                        <div class="menu bg-light mb-3 p-4">
-                            <img src="images/menu-1.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span style="color: #c5a880;">$20.00</span></div>
-                        </div>
-                        <div class="menu bg-light mb-3 p-4">
-                            <img src="images/menu-2.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$26.00</span></div>
-                        </div>
-                        <div class="menu bg-light mb-3 p-4">
-                            <img src="images/menu-3.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$29.00</span></div>
-                        </div>
-                        <div class="menu bg-light p-4">
-                            <img src="images/menu-4.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$30.00</span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 two">
-                        <div class="menu bg-light mb-3 p-4"><img src="images/menu-5.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$19.00</span></div>
-                        </div>
-                        <div class="menu bg-light mb-3 p-4"><img src="images/menu-6.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$23.00</span></div>
-                        </div>
-                        <div class="menu bg-light mb-3 p-4"><img src="images/menu-7.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$33.00</span></div>
-                        </div>
-                        <div class="menu bg-light p-4"><img src="images/menu-8.jpg.webp" style="width: 80px; height: 80px;" class="rounded-circle">
-                            <div class="content">Grilled Beef with potatoes<span  style="color: #c5a880;">$36.00</span></div>
-                        </div>
+            <h1 class="display-1 mt-2">Restaurant & Bar</h1>
+            <div class="row mt-5 g-md-5">
+                <div class="col-md-12 col-xl-5">
+                    <div class="img-container h-100" style="position: relative; z-index: -1;">
+                        <img src="images/resto-bar.jpg.webp" style="width: 100%; height: 100%;">
+                        <div class="overlay"></div>
                     </div>
                 </div>
+                <div class="col-md-12 col-xl-7">
+                    <div class="row">
+                        <div class="col-md-6 one">
+                            <div class="menu bg-light mb-3 p-4">
+                                <img src="images/menu-1.jpg.webp" style="width: 80px; height: 80px;"
+                                    class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$20.00</span></div>
+                            </div>
+                            <div class="menu bg-light mb-3 p-4">
+                                <img src="images/menu-2.jpg.webp" style="width: 80px; height: 80px;"
+                                    class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$26.00</span></div>
+                            </div>
+                            <div class="menu bg-light mb-3 p-4">
+                                <img src="images/menu-3.jpg.webp" style="width: 80px; height: 80px;"
+                                    class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$29.00</span></div>
+                            </div>
+                            <div class="menu bg-light p-4">
+                                <img src="images/menu-4.jpg.webp" style="width: 80px; height: 80px;"
+                                    class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$30.00</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 two">
+                            <div class="menu bg-light mb-3 p-4"><img src="images/menu-5.jpg.webp"
+                                    style="width: 80px; height: 80px;" class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$19.00</span></div>
+                            </div>
+                            <div class="menu bg-light mb-3 p-4"><img src="images/menu-6.jpg.webp"
+                                    style="width: 80px; height: 80px;" class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$23.00</span></div>
+                            </div>
+                            <div class="menu bg-light mb-3 p-4"><img src="images/menu-7.jpg.webp"
+                                    style="width: 80px; height: 80px;" class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$33.00</span></div>
+                            </div>
+                            <div class="menu bg-light p-4"><img src="images/menu-8.jpg.webp"
+                                    style="width: 80px; height: 80px;" class="rounded-circle">
+                                <div class="content">Grilled Beef with potatoes<span
+                                        style="color: #c5a880;">$36.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
-        <div class="container-fluid text-center">
-            <p class="" style="color: #c5a880; letter-spacing: 2.6px;">TESTIMONIAL</p>
-            <h1 class="display-2">Happy Guests</h1>
-        </div>
+    <div class="container-fluid text-center">
+        <p class="" style="color: #c5a880; letter-spacing: 2.6px;">TESTIMONIAL</p>
+        <h1 class="display-2">Happy Guests</h1>
+    </div>
 
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
-        
+
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
-          <div class="carousel-item active d-flex justify-content-between align-itmes-center">
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 1
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+            <div class="carousel-item active d-flex justify-content-between align-itmes-center">
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 1
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 2
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 2
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 3
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 3
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
             </div>
-          </div>
-          <div class="carousel-item d-flex justify-content-between align-itmes-center">
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 4
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+            <div class="carousel-item d-flex justify-content-between align-itmes-center">
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 4
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 5
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 5
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 6
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 6
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
             </div>
-          </div>
-          <div class="carousel-item d-flex justify-content-between align-itmes-center">
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 7
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+            <div class="carousel-item d-flex justify-content-between align-itmes-center">
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 7
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 8
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 8
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 500px;">
-                <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
-                    <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
-                    <div class="content d-flex flex-column align-content-center justify-content-center">
-                        <h5>
-                            Hanjala Shihab 9
-                        </h5>
-                        <p style="color: #c5a880;">Software Engineer</p>
+                <div class="card" style="width: 500px;">
+                    <div class="card-header p-3 d-flex flex-row justify-content-evenly align-content-center">
+                        <img src="images/Shihab.jpg" width="100px" height="100px" class="rounded-circle">
+                        <div class="content d-flex flex-column align-content-center justify-content-center">
+                            <h5>
+                                Hanjala Shihab 9
+                            </h5>
+                            <p style="color: #c5a880;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
                     </div>
                 </div>
-                <div class="card-body p-3">
-                    <p>This is great.Fantastic Service indeed.I am impressed enough.RECOMMENDED.</p>
-                </div>
             </div>
-          </div>
         </div>
-        
+
         <!-- Left and right controls/icons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+            <span class="carousel-control-prev-icon"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon"></span>
         </button>
-      </div>
-    
+    </div>
+
 
     <section class="section10" style="margin-top: 150px;">
         <div class="container-fluid">
@@ -960,4 +997,5 @@
         </div>
     </section>
 </body>
+
 </html>
