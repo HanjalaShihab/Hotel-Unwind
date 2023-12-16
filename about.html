@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5295537e26.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Roboto+Slab:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/S-removebg-preview.png" type="icon/x-image">
+    <title>Hotel UNWIND</title>
+    <style>
+        body {
+            background-color: rgb(241, 241, 241);
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-color: transparent !important;
+            margin: 0px 70px;
+        }
+
+        .navbar .navbar-nav .active {
+            color: #ffffff !important;
+        }
+
+        .navbar .navbar-nav .nav-link:not(.active) {
+            color: rgb(208, 208, 208) !important;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar {
+                background: #222222 !important;
+                position: relative;
+                top: 0;
+                padding: 7px 0;
+                margin: 0;
+            }
+        }
+
+        .navbar .container-fluid .Logo:hover {
+            color: black !important;
+        }
+
+        .navbar .container-fluid button {
+            border: none;
+            color: white;
+        }
+
+        .navbar .container-fluid span {
+            color: white !important;
+        }
+
+        /* navbar ends */
+        
+        /* Section 1 starts */
+
+        .section1 {
+            background-image: url(images/bg_3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            position: relative;
+            width: 100%;
+            height: 800px;
+            z-index: 0;
+            margin-bottom: 110px;
+        }
+
+        .section1 .row .links a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section1 .row h1 {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .section1 .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            opacity: 0.5;
+            background-color: #000000;
+        }
+
+        /* Section 3 stats */
+
+        .section3 {
+            margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .section3 .conn-two {
+                margin-top: -25px !important;
+                margin-bottom: 60px !important;
+            }
+        }
+
+        .col-md-6 .flex-md-column-reverse:hover .conn {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .col-md-6 .flex-md-column-reverse .conn {
+            transition: 0.3s ease;
+        }
+
+        .col-md-6 .justforhover .conn {
+            transition: 0.3s ease;
+        }
+
+        .col-md-6 .justforhover:hover .conn {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        /* Section 3 ends */
+
+        /* Section 5 starts */
+
+        .section5 .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.8;
+            background-color: #222222;
+        }
+
+        .section5 .row {
+            z-index: 1;
+        }
+
+        /* Section video starts */
+
+        .video {
+            position: relative;
+            background-image: url(images/bg_2.jpg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 750px;
+            z-index: 0;
+        }
+
+        .video .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.5;
+            background-color: black;
+            z-index: -1;
+        }
+
+
+        .video i {
+            text-decoration: none;
+            color: #c5a880;
+            font-size: 70px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .video video {
+            display: none;
+        }
+
+        /* Section 12 starts */
+
+        @media screen and (max-width: 760px) {
+            .section12 .container-fluid .row .col-md img {
+                height: 350px;
+                margin: 15px 0px 15px 0px;
+            }
+        }
+
+        /* Section 13 starts */
+
+        .section13 .mt-4 .icons {
+            margin-top: 40px !important;
+        }
+
+        .section13 .mt-4 .icons a {
+            margin: 0px 12px 0px 0px;
+            text-decoration: none;
+            color: #c5a880;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background-color: #7e7e7e34;
+        }
+        
+        .section13 .sm-links {
+            display: flex;
+            flex-direction: column;
+        }
+        .section13 .sm-links a {
+            color: white;
+            text-decoration: none;
+            margin: 13px 0px 0px 0px;
+        }
+
+        .section13 .sm-links a:hover {
+            color: #c5a880;
+        }
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-light"><span class="Logo"
+                    style="font-size: 30px; font-weight: bold;font-family: 'Josefin Sans', sans-serif; letter-spacing: 2.1px;">Unwind</span><small
+                    class="d-block" style="font-size: 14px; font-weight: 500;">HOTEL
+                    BOOKING</small></a>
+            <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon text-bg-light me-2"></span> <span class="">MENU</span>
+            </button>
+
+            <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link mx-4 text-light">HOME</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link mx-4 text-light active">ABOUT</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link mx-4 text-light">ROOMS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link mx-4 text-light">RESTO & BAR</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link mx-4 text-light">BLOG</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ms-4 text-light">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section1">
+        <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="row">
+                <div class="links">
+                    <a href="index.html">HOME <i class="fa-solid fa-angle-right ms-0 me-3"></i></a>
+                    <a href="about.html">ABOUT US <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <h1 class="display-1">About us</h1>
+            </div>
+            
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+
+    
+    <section class="section3 pb-5">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 d-md-flex flex-md-column-reverse">
+                            <div class="lcard">
+                                <img src="images/f-services.jpg.webp" style="width: 100%; height: 240px;">
+                            </div>
+
+                            <div
+                                class="conn bg-light border p-4 mb-4 d-flex justify-content-center align-content-center flex-column text-center">
+                                <i class="fa-regular fa-face-smile-beam"
+                                    style="font-size: 60px; margin-bottom: 15px; color: #c5a880;"></i>
+                                <h4 class="car-title">
+                                    Cozy Room
+                                </h4>
+                                <p class="car-text text-center mt-2">
+                                    Far far away, behind the word mountains, far from the countries Vokalia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 justforhover">
+                            <div class="lcard mb-4">
+                                <img src="images/f-services-2.jpg.webp" style="width: 100%; height: 240px;">
+                            </div>
+                            <div
+                                class="conn conn-two border bg-light p-4 d-md-flex justify-content-center align-content-center flex-md-column text-center">
+                                <i class="fa-regular fa-face-grin-hearts"
+                                    style="font-size: 60px; margin-bottom: 15px; color: #c5a880;"></i>
+                                <h4>Special Offers</h4>
+                                <p>
+                                    Far far away, behind the word mountains, far from the countries Vokalia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p><small style="color: #c5a880; font-weight: bold; letter-spacing: 2px;">ABOUT US</small></p>
+                    <h1 class="display-1">Unwind A Hotel Booking Agency</h1>
+                    <p class="mt-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
+                        coast of the Semantics, a large language ocean.
+                    </p>
+                    <a href="#" class="btn btn-success p-3 rounded-0 mt-4">BOOK YOUR ROOM NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5 justify-content-center align-content-center d-flex" style="position: relative; background-image: url(images/bg_1.jpg.webp);background-position: center;background-size: cover; background-repeat: no-repeat; width: 100%; height: 200px;">
+        <div class="container d-flex flex-wrap justify-content-center align-content-center">
+            <div class="row">
+                <div class="col-md-6 text-light">
+                    <p><small style="font-weight: bold;">FIND BEST HOTEL FOR LIVING</small></p>
+                    <h3 class="mt-2 d-block text-start">Find the BEST Hotel in your Next Vacation</h3>
+                </div>
+
+                <div class="col-md-6 text-end mt-4">
+                    <a href="#" class="btn btn-primary p-3 px-5 rounded-0">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="video">
+        <div class="overlay"></div>
+        <div class="content d-flex justify-content-center align-items-center h-100 flex-column">
+            <p style="font-weight: 500; color: white;">WATCH OUR LUXURIOUS HOTEL</p>
+            <h1 class="display-1 text-white">Take A Tour</h1>
+            <i class="fa-solid fa-circle-play" onclick="thevideo()" id="vidIcon">
+            </i> 
+            <video src="video/pexels-chàng-trai-nông-thôn-15445873 (1080p).mp4" controls width="60%" height="60%" id="video">
+                <source src="video/pexels-chàng-trai-nông-thôn-15445873 (1080p).mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="section12" style="margin-top: 140px; margin-bottom: 15px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md">
+                    <img src="images/gallery-1.jpg.webp" width="100%" height="220px">
+                </div>
+                <div class="col-md">
+                    <img src="images/gallery-2.jpg.webp" width="100%" height="220px">
+                </div>
+                <div class="col-md">
+                    <img src="images/gallery-3.jpg.webp" width="100%" height="220px">
+                </div>
+                <div class="col-md">
+                    <img src="images/gallery-4.jpg.webp" width="100%" height="220px">
+                </div>
+                <div class="col-md">
+                    <img src="images/gallery-5.jpg.webp" width="100%" height="220px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section13">
+        <div class="container-fluid text-bg-dark p-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg">
+                    <div class="article13">
+                        <p style="font-size: 26px; font-weight: bold;">Unwind</p>
+                        <p style="margin-top: -26px; font-size: 16px;font-weight: 400;"><small>HOTEL BOOKING</small></p>
+                        <p class="mt-5" style="color: rgb(179, 179, 179);">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <div class="mt-4">
+                            <div class="icons">
+                                <a href="https://www.facebook.com/HanjalaShihab/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3>Services</h3>
+                    <div class="row mt-5">
+                        <div class="col-lg">
+                            <p><i class="fa-solid fa-angle-right me-2"></i>Free Wifi</p>
+                            <p><i class="fa-solid fa-angle-right me-2"></i>Easy Booking</p>
+                            <p><i class="fa-solid fa-angle-right me-2"></i>Restaurant</p>
+                            <p><i class="fa-solid fa-angle-right me-2"></i>Swimming Pool</p>
+                        </div>
+                        <div class="col-lg">
+                            <p><i class="fa-solid fa-angle-right me-2"></i>Beauty & Health</p>
+                            <p><i class="fa-solid fa-angle-right me-2"></i>60" Flatscreen TV</p>
+                            <p><i class="fa-solid fa-angle-right me-2"></i>Cold Aircondition</p>
+                            <p><i class="fa-solid fa-angle-right me-2"></i>Help & Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 sm-links">
+                    <h3 class="mb-5">Quick Links</h3>
+                    <a href="" style="margin-top: 0px !important;"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
+                    <a href=""><i class="fa-solid fa-angle-right me-2"></i>About</a>
+                    <a href=""><i class="fa-solid fa-angle-right me-2"></i>Rooms</a>
+                    <a href=""><i class="fa-solid fa-angle-right me-2"></i>Resto & Bar</a>
+                </div>
+                <div class="col-md-6 col-lg">
+                    <h3 class="mb-5">Have a Questions?</h3>
+                    <div class="address d-flex flex-row">
+                        <i class="fa-solid fa-map me-3 mt-2" style="color: #c5a880;"></i><p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+                    <div class="address d-flex flex-row">
+                        <i class="fa-solid fa-phone me-3 mt-2" style="color: #c5a880;"></i><p>+2 392 3929 210</p>
+                    </div>
+                    <div class="address d-flex flex-row">
+                        <i class="fa-solid fa-paper-plane me-3 mt-2" style="color: #c5a880;"></i><p>info@yourdomain.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section14">
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="background-color: black; color: white; height: 120px">
+            <p>Copyright @ by <a href="https://colorlib.com/" style="color: #c5a880; text-decoration: none;">Colorlib.</a> Designed by Developer Hanjala || 2023</p>
+        </div>
+    </section>
+
+    <script>
+        function thevideo() {
+            var videoElement = document.getElementById("video");
+            var vidIconElement = document.getElementById("vidIcon");
+    
+            // Display the video and hide the video icon
+            videoElement.style.display = "block";
+            vidIconElement.style.display = "none";
+    
+            // Add an event listener for the 'ended' event
+            videoElement.addEventListener("ended", function() {
+                // When the video ends, hide the video and show the video icon
+                videoElement.style.display = "none";
+                vidIconElement.style.display = "block";
+            });
+        }
+    </script>
+</body>
+</head>
