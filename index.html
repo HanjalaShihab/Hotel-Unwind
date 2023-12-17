@@ -416,8 +416,28 @@
             margin-bottom: 150px;
         }
 
-        .section10 {
-            overflow: hidden;
+        .section9 .carousel .carousel-item .messages {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        @media screen and (max-width:1050px) {
+            .section9 .carousel .carousel-item .messages {
+                flex-direction: column;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+
+            .carousel-inner .card {
+                margin: 20px 0px;
+            }
+        }
+
+        @media screen and (max-width: 526px) {
+            .carousel-inner .card {
+                max-width: 400px;
+            }
         }
 
         .section10 .container-fluid .row .col-md-6 {
@@ -868,23 +888,23 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="main d-block w-100">
-                    <div class="messages d-flex flex-row justify-content-evenly">
-                        <div class="card" style="width: 500px;  height: auto;">
+                    <div class="messages">
+                        <div class="card" style="max-width: 500px;  height: auto;">
                             <div class="card-header d-flex flex-row py-3">
                                 <img src="images/Shihab.jpg" style="width: 60px; height: 60px;margin-right: 30px;" class="rounded-pill">
                                 <h4 class="mt-2">John Doe</h4><span class="badge bg-success ms-1 mt-3" style="height: 20px;">Marketing Manager</span>
                             </div>
                             <div class="card-body py-5">
-                                <p style="font-size: 18px; text-align: justify;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
+                                <p style="font-size: 18px;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 500px; height: auto;">
+                        <div class="card" style="max-width: 500px; height: auto;">
                             <div class="card-header d-flex flex-row py-3">
                                 <img src="images/Shihab.jpg" style="width: 60px; height: 60px;margin-right: 30px;" class="rounded-pill">
                                 <h4 class="mt-2">Andrew</h4><span class="badge bg-success ms-1 mt-3" style="height: 20px;">Businessman</span>
                             </div>
                             <div class="card-body py-5">
-                                <p style="font-size: 18px; text-align: justify;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
+                                <p style="font-size: 18px;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
                             </div>
                         </div>
                     </div>
@@ -892,24 +912,24 @@
               </div>
               <div class="carousel-item">
                 <div class="main d-block w-100">
-                    <div class="messages d-flex flex-row justify-content-evenly">
-                        <div class="card" style="width: 500px; height: auto;">
+                    <div class="messages">
+                        <div class="card" style="max-width: 500px; height: auto;">
                             <div class="card-header d-flex flex-row py-3">
                                 <img src="images/Shihab.jpg" style="width: 60px; height: 60px;margin-right: 30px;" class="rounded-pill">
                                 <h4 class="mt-2">Shihab</h4><span class="badge bg-success ms-1 mt-3" style="height: 20px;">Web Developer</span>
                             </div>
                             <div class="card-body py-5">
-                                <p style="font-size: 18px; text-align: justify;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
+                                <p style="font-size: 18px;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
                             </div>
                         </div>
 
-                        <div class="card" style="width: 500px;  height: auto;">
+                        <div class="card" style="max-width: 500px;  height: auto;">
                             <div class="card-header d-flex flex-row py-3">
                                 <img src="images/Shihab.jpg" style="width: 60px; height: 60px;margin-right: 30px;" class="rounded-pill">
                                 <h4 class="mt-2">Faysal</h4><span class="badge bg-success ms-1 mt-3" style="height: 20px;">Civil Engineer</span>
                             </div>
                             <div class="card-body py-5">
-                                <p style="font-size: 18px; text-align: justify;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
+                                <p style="font-size: 18px;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
                             </div>
                         </div>
                     </div>
@@ -917,24 +937,24 @@
               </div>
               <div class="carousel-item">
                 <div class="main d-block w-100">
-                    <div class="messages d-flex flex-row justify-content-evenly">
-                        <div class="card" style="width: 500px;  height: auto;">
+                    <div class="messages">
+                        <div class="card" style="max-width: 500px;  height: auto;">
                             <div class="card-header d-flex flex-row py-3">
                                 <img src="images/Shihab.jpg" style="width: 60px; height: 60px;margin-right: 30px;" class="rounded-pill">
                                 <h4 class="mt-2">Ashfaque</h4><span class="badge bg-success ms-1 mt-3" style="height: 20px;">Engineer</span>
                             </div>
                             <div class="card-body py-5">
-                                <p style="font-size: 18px; text-align: justify;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
+                                <p style="font-size: 18px;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
                             </div>
                         </div>
 
-                        <div class="card" style="width: 500px;  height: auto;">
+                        <div class="card" style="max-width: 500px;  height: auto;">
                             <div class="card-header d-flex flex-row py-3">
                                 <img src="images/Shihab.jpg" style="width: 60px; height: 60px;margin-right: 30px;" class="rounded-pill">
                                 <h4 class="mt-2">John Wick</h4><span class="badge bg-success ms-1 mt-3" style="height: 20px;">Detective</span>
                             </div>
                             <div class="card-body py-5">
-                                <p style="font-size: 18px; text-align: justify;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
+                                <p style="font-size: 18px;">I am very much pleased with their services.This a perfect hotel to spend our weekends.Absolutely recommended.</p>
                             </div>
                         </div>
                     </div>
