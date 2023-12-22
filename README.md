@@ -1,6 +1,6 @@
 # Hotel-Unwind
 
-Hotel Unwind is project which is made  using HTML, CSS, Bootstrap.It is under development.
+Hotel Unwind is project which is made  using HTML, CSS, Bootstrap.
 
 This is a clone website.For making my base on Bootstrap more strong.
 
